@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dbmsProject" Class="dbmsProjectDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-PDSAB38\SQLEXPRESS;Initial Catalog=dbmsProject;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="COLLEGEPORTAL.Properties.Settings" SettingsPropertyName="dbmsProjectConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.loginn_student" Member="loginn_students">
+    <Type Name="loginn_student">
+      <Column Name="user_namee" Type="System.String" DbType="VarChar(50)" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="user_pass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.loginn_Teacher" Member="loginn_Teachers">
+    <Type Name="loginn_Teacher">
+      <Column Name="user_namee" Type="System.String" DbType="VarChar(50)" IsPrimaryKey="true" CanBeNull="true" />
+      <Column Name="user_pass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.attend" Member="attends">
+    <Type Name="attend">
+      <Column Name="Student_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Student_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="A" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="P" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Subjects" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.teacher" Member="teachers">
+    <Type Name="teacher">
+      <Column Name="Teacher_Reg" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Teacher_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Teacher_subjects" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Teacher_Fees" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Class_Teacher" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject_Urdu" Member="Subject_Urdus">
+    <Type Name="Subject_Urdu">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Student_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="First_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Second_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Final_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Avgg" Type="System.Decimal" DbType="Decimal(1,1)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject_Pk" Member="Subject_Pks">
+    <Type Name="Subject_Pk">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Student_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="First_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Second_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Final_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Avgg" Type="System.Decimal" DbType="Decimal(1,1)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject_Phy" Member="Subject_Phies">
+    <Type Name="Subject_Phy">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Student_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="First_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Second_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Final_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Avgg" Type="System.Decimal" DbType="Decimal(1,1)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject_Maths" Member="Subject_Maths">
+    <Type Name="Subject_Math">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Student_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="First_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Second_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Final_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Avgg" Type="System.Decimal" DbType="Decimal(1,1)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject_English" Member="Subject_Englishes">
+    <Type Name="Subject_English">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Student_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="First_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Second_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Final_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Avgg" Type="System.Decimal" DbType="Decimal(1,1)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject_Computer" Member="Subject_Computers">
+    <Type Name="Subject_Computer">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Student_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cmp_Marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="First_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Second_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Final_Term_marks" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Avgg" Type="System.Decimal" DbType="Decimal(1,1)" CanBeNull="true" />
+      <Column Name="Result" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Marks" Member="Marks">
+    <Type Name="Mark">
+      <Column Name="student_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Maths" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Phy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Computer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="english" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Urdu" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pak_Std" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="First_Exam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Second_Exam" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Final" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.loginn_Admin" Member="loginn_Admins">
+    <Type Name="loginn_Admin">
+      <Column Name="user_namee" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="user_pass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.students" Member="students">
+    <Type Name="student">
+      <Column Name="student_Reg" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="student_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="student_HB" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="students" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="student_Payment" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="student_Fees" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
